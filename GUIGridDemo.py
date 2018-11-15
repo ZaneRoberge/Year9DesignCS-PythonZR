@@ -10,7 +10,7 @@ ent.grid(row = 0, column = 0)
 
 
 btn = tk.Button(root, text = "Press Me")
-btn.grid(row = 0, column = 0)
+btn.grid(row = 100, column = 100)
 
 
 
