@@ -70,6 +70,16 @@ def runme():
 		m = ((x1+x2)/2,(y1-y2)/2)
 		ent3.delete(0, tk.END)
 		ent3.insert(tk.END, "The midpoint is "+str(m))
+	if data[0] == 2:
+		x2 = int(entryData[0])
+		x1 = int(entryData[2])
+		y2 = int(entryData[4])
+		y1 = int(entryData[6])
+		print("Length of Line")
+		ent2.delete(0,tk.END)
+		m = sqrt(x2-x1)*2+(y2-y1)*2
+		ent3.delete(0, tk.END)
+		ent3.insert(tk.END, "length of the line is "+str(m))
 
 
 data = [0]#data stores the current button selected data[0] = 0 slope data[0] = 1 midpoint data[0] = 1 length
